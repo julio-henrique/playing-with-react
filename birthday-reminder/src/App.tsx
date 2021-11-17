@@ -3,7 +3,7 @@ import data from './data';
 import List from './List';
 
 interface ListChildProps {
-  people: {}
+  people: []
 }
 
 interface ListChild {
