@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@types/sass": "^1.43.0",
+    "sass": "^1.43.4"
+  }
+}

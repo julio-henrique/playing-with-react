@@ -1,13 +1,13 @@
-import { useState } from 'react'
+import { BsPersonCircle } from 'react-icons/bs'
+import { GitRepository } from './components/GitRepository'
+
 import './App.css'
 
 function App() {
-  const [ user, setUser] = useState(0)
-
+  
   return (
-    <div>
-      <h1></h1>
-      <i></i>
+    <div className="container">
+      <GitRepository />
     </div>
   )
 }
