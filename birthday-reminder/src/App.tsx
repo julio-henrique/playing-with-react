@@ -24,6 +24,7 @@ function App() {
         <List people={people} />
         {/* <button onClick={() => setPeople([])}>Clear All</button> */}
       </section>
+      <a href="" target="_blank"></a>
     </main>
   )
 }

@@ -21,24 +21,43 @@ export function GitRepository() {
     }, [] )
 
     return (
-        <div className={styles.gitContainer}>
-            <div className={styles.content}>
-            <BsPersonCircle className={styles.avatar}/>
-            <h1>Arata Kasuga</h1>
-            <h3>site kkk</h3>
-            <h3>94</h3>
-            <div /> 
-            <BsPersonCircle />
-            <h1>Arata Kasuga</h1>
-            <h3>site kkk</h3>
-            <h3>94</h3>
-            <div /> 
-            <BsPersonCircle />
-            <h1>Arata Kasuga</h1>
-            <h3>site kkk</h3>
-            <h3>94</h3>
-            <div /> 
-        </div>
-        </div>
+        <section className={styles.gitContainer}>
+            <ul className={styles.profile}>
+                <li><BsPersonCircle className={styles.avatar}/></li>
+                <li>
+                    <h1>Arata Kasuga</h1>
+                </li>
+                <li>
+                    <a>site kkk</a>
+                </li>
+                <li>
+                    <h3>94</h3>
+                </li>
+                <div className={styles.separete} />
+                <li><BsPersonCircle className={styles.avatar}/></li>
+                <li>
+                    <h1>Arata Kasuga</h1>
+                </li>
+                <li>
+                    <a>site kkk</a>
+                </li>
+                <li>
+                    <h3>94</h3>
+                </li>
+                <div />
+                <li><BsPersonCircle className={styles.avatar}/></li>
+                <li>
+                    <h1>Arata Kasuga</h1>
+                </li>
+                <li>
+                    <a>site kkk</a>
+                </li>
+                <li>
+                    <h3>94</h3>
+                </li>
+                <div />
+                <div />
+            </ul>
+        </section>
     )
 }

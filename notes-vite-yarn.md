@@ -40,4 +40,3 @@ const set = localStorage.setItem('@nameToSave')
 E para remover
 const set = localStorage.removeItem('@nameToSave')
 ```
-
