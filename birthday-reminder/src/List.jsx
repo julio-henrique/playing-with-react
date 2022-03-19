@@ -1,12 +1,4 @@
-interface ListProps {
-    people: []
-    id: number
-    name: string
-    image: string
-    age: number
-}
-
-const List = ({ people }: ListProps) => {
+const List = () => {
   return (
     <>
       {people.map(person => {

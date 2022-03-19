@@ -2,21 +2,10 @@ import { useState } from 'react';
 import data from './data';
 import List from './List';
 
-interface ListChildProps {
-  people: []
-}
 
-interface ListChild {
-  people: ListChildProps[] 
-  id: number
-  name: string
-  image: string
-  age: number
-  length: () => void
-}
 
 function App() {
-  const [ people, setPeople ] = useState<ListChild[]>(data)
+  const [ people, setPeople ] = useState(data)
   return (
     <main>
       <section className='container'>
