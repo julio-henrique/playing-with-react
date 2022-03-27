@@ -1,6 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
 
-export default function Form() {
+export function BigForm() {
     const [formData, setFormData] = React.useState(
         {
             firstName: "", 
