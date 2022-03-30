@@ -4,44 +4,33 @@ import { BsPersonCircle } from "react-icons/bs"
 import styles from './styles.module.scss'
 
 export function GitRepository() {
-    const [ user, setUser ] = useState()
+    const [ user, setUser ] = useState([])
 
-    // useEffect(() => {
-    //     const api = fetch('https://api.github.com/users/defunkt')
-    //         .then(res => res.json())
-    //         .then(data => console.log(data))
-    // }, [] )
+    useEffect(() => {
+        fetch('https://api.github.com/users')
+            .then(res => res.json())
+            .then(data => setUser(data))
+    }, [])
+    console.log(user)
 
-    return (
-        <section className={styles.gitContainer}>
-            <ul className={styles.profile}>
-                <li><BsPersonCircle className={styles.avatar}/></li>
-                <li className={styles.name}>Arata Kasuga</li>
-                <li><a>site kkk</a></li>
-                <li className={styles.repoNumber}>94</li>
-                <div className={styles.separator} />
-            </ul>
-            <ul className={styles.profile}>
-                <li><BsPersonCircle className={styles.avatar}/></li>
-                <li className={styles.name}>Arata Kasuga</li>
-                <li><a>site kkk</a></li>
-                <li className={styles.repoNumber}>94</li>
-                <div className={styles.separator} />
-            </ul>
-            <ul className={styles.profile}>
-                <li><BsPersonCircle className={styles.avatar}/></li>
-                <li className={styles.name}>Arata Kasuga</li>
-                <li><a>site kkk</a></li>
-                <li className={styles.repoNumber}>94</li>
-                <div className={styles.separator} />
-            </ul>
-            <ul className={styles.profile}>
-                <li><BsPersonCircle className={styles.avatar}/></li>
-                <li className={styles.name}>Arata Kasuga</li>
-                <li><a>site kkk</a></li>
-                <li className={styles.repoNumber}>94</li>
-                <div className={styles.separator} />
+    const showUser = user.map(users => {
+        const {login, avatar_url, id, html_url } = users
+        return (
+            <>
+                <li key={id}><img src={avatar_url} className="avatar" /></li>
+                <li className={styles.name}>{login}</li>
+                <li><a>{html_url}</a></li>
+            </>
+                )
+            })
+            
+            return (
+                <>
+         <section className={styles.gitContainer}>
+             <ul className={styles.profile} >
+                {showUser}
             </ul>
         </section>
+        </>
     )
 }
