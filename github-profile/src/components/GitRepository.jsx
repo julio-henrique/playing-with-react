@@ -18,15 +18,15 @@ export function GitRepository() {
         return (
             <>
                 <li key={id}><img src={avatar_url} className={styles.avatar} /></li>
-                <li className={styles.name}>{login}</li>
-                <li><a href={html_url}>Profile</a></li>
+                <p className={styles.name}>{login}</p>
+                <a href={html_url}>Profile</a>
             </>
                 )
             })
             
             return (
                 <>
-         <section className={styles.gitContainer}>
+         <section className="gitContainer">
              <ul className={styles.profile} >
                 {showUser}
             </ul>

@@ -3,17 +3,12 @@ section.gitContainer {
     text-align: center;
 
     display: grid;
-    grid-template-columns: 1fr, 1fr, 2fr;
+    grid-template-rows:    repeat(4, 100px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin: 3rem auto;
+    margin: 3rem ;
 
-    .name {
-        font-size: 2rem;
-        line-height: 0.5rem;
-        color: white;
-        font-weight: bold;
-    }
-
+    
     .avatar {
         min-width: 50px;
         height: 50px;
@@ -25,12 +20,19 @@ section.gitContainer {
     
     ul {
         list-style: none;
-
+        
         li {
             & + li {
                 margin-top: 2rem;
             }
-
+            
+            p {
+                font-size: 2rem;
+                line-height: 0.5rem;
+                color: white;
+                font-weight: bold;
+            }
+            
             img {
                 height: 10px;
                 max-width: 10px;
