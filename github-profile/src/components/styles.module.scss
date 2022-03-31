@@ -1,22 +1,24 @@
 section.gitContainer {
-    margin: 3rem auto;
+    margin: 3rem;
+    text-align: center;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr, 1fr, 2fr;
+    gap: 2rem;
+    margin: 3rem auto;
 
     .name {
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 0.5rem;
         color: white;
-    }
-    
-    .repoNumber {
-        font-size: 2rem;
-        line-height: 1.5rem;
-        color: rgb(199, 199, 199);
-        margin-top: 8px;
+        font-weight: bold;
     }
 
+    .avatar {
+        min-width: 50px;
+        height: 50px;
+    }
+    
     .separator {
         margin: 4rem;
     }
@@ -35,12 +37,9 @@ section.gitContainer {
             }
 
             a {
-                font-size: 2rem;
+                font-size: 1.7rem;
                 text-decoration: none;
                 color: white;
-            }
-
-            .avatar {
             }
         }
     }

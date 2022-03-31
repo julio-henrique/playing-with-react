@@ -17,9 +17,9 @@ export function GitRepository() {
         const {login, avatar_url, id, html_url } = users
         return (
             <>
-                <li key={id}><img src={avatar_url} className="avatar" /></li>
+                <li key={id}><img src={avatar_url} className={styles.avatar} /></li>
                 <li className={styles.name}>{login}</li>
-                <li><a>{html_url}</a></li>
+                <li><a href={html_url}>Profile</a></li>
             </>
                 )
             })
