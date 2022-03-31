@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { BsPersonCircle } from "react-icons/bs"
+// import { BsPersonCircle } from "react-icons/bs"
 
 import styles from './styles.module.scss'
 
@@ -18,16 +18,17 @@ export function GitRepository() {
         return (
             <>
                 <li key={id}><img src={avatar_url} className={styles.avatar} /></li>
-                <p className={styles.name}>{login}</p>
+                <li className={styles.name}>{login}</li>
                 <a href={html_url}>Profile</a>
+                <div className={styles.separator}></div>
             </>
                 )
             })
             
             return (
                 <>
-         <section className="gitContainer">
-             <ul className={styles.profile} >
+         <section className={styles.gitContainer}>
+             <ul>
                 {showUser}
             </ul>
         </section>

@@ -3,21 +3,26 @@ section.gitContainer {
     text-align: center;
 
     display: grid;
-    grid-template-rows:    repeat(4, 100px);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin: 3rem ;
+    grid-template-columns: repeat(1fr, 1fr);
 
+    .name {
+        font-size: 2rem;
+        line-height: 0.5rem;
+        color: white;
+        font-weight: bold;
+        margin: 1rem;
+    }
     
-    .avatar {
-        min-width: 50px;
-        height: 50px;
+    a {
+        font-size: 1.7rem;
+        text-decoration: none;
+        color: white;
     }
     
     .separator {
-        margin: 4rem;
+        margin: 2.9rem;
     }
-    
+
     ul {
         list-style: none;
         
@@ -26,23 +31,12 @@ section.gitContainer {
                 margin-top: 2rem;
             }
             
-            p {
-                font-size: 2rem;
-                line-height: 0.5rem;
-                color: white;
-                font-weight: bold;
-            }
-            
             img {
-                height: 10px;
-                max-width: 10px;
+                min-width: 50px;
+                height: 50px;
             }
 
-            a {
-                font-size: 1.7rem;
-                text-decoration: none;
-                color: white;
-            }
         }
     }
 }
+
