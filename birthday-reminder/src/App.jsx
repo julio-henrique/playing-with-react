@@ -1,14 +1,17 @@
 import { useState } from 'react';
 import data from './data';
-// import { List } from './List';
+import { List } from './List';
 
 import './App.css'
 
 export function App() {
+  const [users, setUsers] = useState(data)
+
   return (
     <main>
       <section className='container'>
-        <h3>2 Anivesários hoje</h3>
+        <h3>{users.length} Anivesários hoje</h3>
+        <List people={users} />
         <button>Deletar todos</button>
       </section>
       <a href="" target="_blank"></a>
