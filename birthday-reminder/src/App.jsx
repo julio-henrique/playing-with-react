@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import data from './data';
-// import List from './List';
+// import { List } from './List';
 
-function App() {
+import './App.css'
+
+export function App() {
   return (
     <main>
       <section className='container'>
@@ -13,5 +15,3 @@ function App() {
     </main>
   )
 }
-
-export default App;

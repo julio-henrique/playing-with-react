@@ -1,4 +1,4 @@
-const List = () => {
+export const List = () => {
   return (
     <h3>list</h3>
   );
@@ -13,5 +13,3 @@ const List = () => {
                         </div>
                     </article>
 */
-
-export default List;
