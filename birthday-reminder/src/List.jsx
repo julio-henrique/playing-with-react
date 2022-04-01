@@ -1,5 +1,4 @@
 export const List = ({ people }) => {
-  console.log(people)
   const showUsers = people.map(item => {
   const {id, name, age, image} = item
     return (
@@ -19,13 +18,3 @@ export const List = ({ people }) => {
     </>
   );
 };
-
-/**
- * <article className='person'>
-                        <img />
-                        <div>
-                        <h4>"name"</h4>
-                        <p> years</p>
-                        </div>
-                    </article>
-*/

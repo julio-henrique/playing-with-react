@@ -12,7 +12,8 @@ export function App() {
       <section className='container'>
         <h3>{users.length} Anivesários hoje</h3>
         <List people={users} />
-        <button>Deletar todos</button>
+        <button onClick={() => setUsers([])}>Deletar todos</button>
+        <button onClick={() => setUsers(data)}>Adicionar todos</button>
       </section>
       <a href="" target="_blank"></a>
     </main>
