@@ -6,8 +6,8 @@ function App() {
   return (
     <main>
       <section className='container'>
-        <h3>{people.length} Birthdays Today</h3>
-        
+        <h3>2 Anivesários hoje</h3>
+        <button>Deletar todos</button>
       </section>
       <a href="" target="_blank"></a>
     </main>
