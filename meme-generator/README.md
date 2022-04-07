@@ -37,7 +37,9 @@ A aplicação deve ter os dados vindo de uma API.
 
 
 ### Desenvolvimento Continuo
+Definitivamente um ótimo projeto para aprender e treinar
 
+De agora em diante eu vou continuar focando mais em React e ir me aprofundando na tecnologia
 
 
 ## Author
