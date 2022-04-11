@@ -1,4 +1,5 @@
 import React from 'react'
+import { Review } from './Review'
 
 import './App.css'
 
@@ -10,7 +11,7 @@ function App() {
           <h2>Our Reviews</h2>
           <div className='underline'></div>
         </div>
-        {/* review */}
+        <Review />
       </section>
     </main>
   )
