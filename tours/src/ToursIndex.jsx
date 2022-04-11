@@ -4,7 +4,7 @@ import { ShowTours } from './ShowTours'
 export const ToursIndex = ({ tours }) => {
   const renderTours = tours.map(item => {
     return (
-      <ShowTours key={item.id} item={item} />
+      <ShowTours key={item.id} {...item} />
     )
   })
 

@@ -3,6 +3,7 @@ import { Loading } from './Loading'
 import { ToursIndex } from './ToursIndex'
 
 import './App.css'
+
 // ATTENTION!!!!!!!!!!
 // I SWITCHED TO PERMANENT DOMAIN
 const url = 'https://course-api.com/react-tours-project'
@@ -10,9 +11,6 @@ const url = 'https://course-api.com/react-tours-project'
 function App() {
     const [loading, setLoading] = useState(true)
     const [tours, setTours] = useState([])
-    
-  // Crie uma função para remover os tours
-
 
     const fetchTours = async () => {
         try {
@@ -43,13 +41,11 @@ function App() {
       </div>
     </main> 
    */
-console.log(tours)
-  // No final retorne o ToursIndex
-  return (
-    <main>
-        <ToursIndex tours={tours} />
-    </main>
-  )
+    return (
+        <main>
+            <ToursIndex tours={tours} />
+        </main>
+    )
 }
 
 export default App
