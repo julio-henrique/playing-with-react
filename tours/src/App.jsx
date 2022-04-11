@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Loading } from './Loading'
+import { ToursIndex } from './ToursIndex'
 
 import './App.css'
 // ATTENTION!!!!!!!!!!
@@ -16,7 +17,7 @@ function App() {
     const fetchTours = async () => {
         try {
             const res = await fetch(url)
-            const data = res.json()
+            const data = await res.json()
             setLoading(false)
             setTours(data)
         } catch (error) {
@@ -25,9 +26,9 @@ function App() {
         }
     }
 
-    /* useEffect(() => {
+    useEffect(() => {
         fetchTours()
-    }, []) */
+    }, [])
 
     if(loading) return <Loading />
 
@@ -42,10 +43,11 @@ function App() {
       </div>
     </main> 
    */
-
+console.log(tours)
   // No final retorne o ToursIndex
   return (
     <main>
+        <ToursIndex tours={tours} />
     </main>
   )
 }

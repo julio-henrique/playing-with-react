@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Destructure the api
-export const ShowTour = () => {
+export const ShowTours = ({ id, image, name, info, price }) => {
   // o read more tem que ser um estado, inicializado como false
   return (
     <article className='single-tour'>
