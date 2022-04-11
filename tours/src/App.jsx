@@ -12,6 +12,11 @@ function App() {
     const [loading, setLoading] = useState(true)
     const [tours, setTours] = useState([])
 
+    function removeTour(id) {
+        const filterTour = tours.filter(item => item.id !== id)
+        setTours(filterTour)
+    }
+
     const fetchTours = async () => {
         try {
             const res = await fetch(url)
@@ -30,20 +35,20 @@ function App() {
 
     if(loading) return <Loading />
 
-
-  /**
-   * Se a tours.length for igual a 0
-   * então mostre a página abaixo
-    <main>
-      <div className='title'>
-      <h2>no tours left</h2>
-      <button className='btn'></button>
-      </div>
-    </main> 
-   */
+    if(tours.length === 0) {
+        return (
+            <main>
+                <div className='title'>
+                <h2>no tours left</h2>
+                <button className='btn' onClick={fetchTours} >Refresh</button>
+                </div>
+            </main> 
+        )
+    }
+    
     return (
         <main>
-            <ToursIndex tours={tours} />
+            <ToursIndex tours={tours} removeTour={removeTour} />
         </main>
     )
 }
