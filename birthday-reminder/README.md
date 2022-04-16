@@ -1,5 +1,6 @@
 ### Birthday Reminder
 Um rápido projeto com React para lembrar aniversários
+O link para o site se encontra abaixo.
 
 ## Tabela de conteúdos
 
@@ -26,7 +27,7 @@ Receber dados, manipular dados, criar um botão para deletar todos os usuários 
 
 ### Links
 
-- Live Site URL: [Comente Agora Web](https://julio-henrique-birthday-reminder.netlify.app/)
+- Live Site URL: [Birthday Reminder](https://julio-henrique-birthday-reminder.netlify.app/)
 
 
 ## Meu processo
