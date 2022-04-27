@@ -28,7 +28,7 @@ Nota: A avaliação aleatória **NÃO DEVE** se repetir
 
 
 ### Screenshot
-![Reviews](./src/review.png)
+![Reviews](./src/screencapture.png)
 
 
 ### Links
