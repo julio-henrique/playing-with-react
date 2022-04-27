@@ -11,7 +11,6 @@ App com avaliações que pode ser usado para sites e e-commerce
 - [Meu processo](#meu-processo)
   - [Oque eu aprendi](#oque-eu-aprendi)
   - [Desenvolvimento Continuo](#development-continuo)
-  - [Recursos Úteis](#recursos-uteis)
 - [Autor](#autor)
 
 
@@ -38,15 +37,35 @@ Nota: A avaliação aleatória **NÃO DEVE** se repetir
 ## Meu processo
 
 ### Oque eu aprendi
-E
+Aqui foi muito mais um teste de lógica, e eu tenho que dizer que apesar de parecer fácil no primeiro momento, até que foi um desafio interessante.
 
-```tsx
+Começamos com a função `checkNumber()` que eu fiz de uma forma que ficasse bem feita, com código limpo e fácil de se ler, ficou perfeita hahaha.
+```jsx
+function checkNumber(number) {
+    if(number > data.length -1) return 0
+    if(number < 0) return data.length -1
+    return number
+}
+```
 
+E a parte de lógica ficou na `randomPerson()` function. 
+Eu criei o número aleatório, e comparei com o index atual, se fossem iguais, adiciono +1
+Então uso o `setIndex()` e dentro dele faço a checagem do número, para depois fazer a troca do número.
+Foi super legal esse desafio e mais interessante do que parecia a primeiro momento.
+```jsx
+const randomPerson = () => {
+    let randomNumber = Math.floor(Math.random() * data.length)
+
+    if(randomNumber === index) return randomNumber = index + 1
+
+    setIndex(checkNumber(randomNumber))
+    console.log(randomNumber)
+}
 ```
 
 
 ### Desenvolvimento Continuo
-Então vou focar em React.js :D
+Depois disso, vou continuar me aprimorando no **ReactJS** e também vou ir ver uns conteúdos sobre lógica de programação, curti muito fazer esse projeto :D
 
 
 ## Author
