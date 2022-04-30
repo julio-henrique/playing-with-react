@@ -40,6 +40,5 @@ Bem como a minha `badge` que eu coloco no topo da imagem avisando que é online 
 
 
 ## Author
-
-- Linkedin - [Julio Henrique](https://www.linkedin.com/in/julio-h/)
+- Linkedin - [Julio Henrique](https://www.linkedin.com/in/julio-henriqueCS/)
 - Email - juliohjesus@gmail.com
