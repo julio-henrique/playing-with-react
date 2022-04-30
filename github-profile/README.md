@@ -43,5 +43,5 @@ Continuar focado no **React**, eu vou aprender os fundamentos e realmente ter um
 
 ## Author
 
-- Linkedin - [Julio Henrique](https://www.linkedin.com/in/julio-h/)
+- Linkedin - [Julio Henrique](https://www.linkedin.com/in/julio-henriqueCS/)
 - Email - juliohjesus@gmail.com

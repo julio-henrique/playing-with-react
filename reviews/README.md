@@ -69,5 +69,5 @@ Depois disso, vou continuar me aprimorando no **ReactJS** e também vou ir ver u
 
 
 ## Author
-- Linkedin - [Julio Henrique](https://www.linkedin.com/in/julio-h/)
+- Linkedin - [Julio Henrique](https://www.linkedin.com/in/julio-henriqueCS/)
 - Email - juliohjesus@gmail.com
